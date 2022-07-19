@@ -89,6 +89,14 @@
     .cart-btn {
         margin-left: 1rem;
     }
+
+    .cart-list-spacer {
+        border-bottom: 1px solid #ccc;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
 </style>
 
 </html>
