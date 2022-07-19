@@ -4,6 +4,10 @@
 
         <div class="trending-wrapper">
             <h2>Cart Items</h2>
+            <div class="row">
+                <div class="col-md-8"></div>
+                <div class="col-md-4"><a href="ordernow"><button class="btn btn-success">Order Now</button></a></div>
+            </div>
             @foreach ($products as $product)
                 <div class="row searched-item cart-list-spacer">
                     <div class="col-md-4">
