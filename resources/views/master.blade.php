@@ -49,8 +49,9 @@
         padding-top: 50px;
     }
 
-    img.slider-img {
-        height: 500px;
+    .slider-img {
+        height: 550px;
+        width: auto;
     }
 
     .trending-img {
@@ -78,6 +79,15 @@
     .detail-img {
         margin: 10%;
         height: 250px;
+    }
+
+    .search-box {
+        width: 500px !important;
+
+    }
+
+    .cart-btn {
+        margin-left: 1rem;
     }
 </style>
 

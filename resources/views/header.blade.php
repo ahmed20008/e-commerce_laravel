@@ -17,8 +17,14 @@
                     <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Shop</a>
                 </li>
             </ul>
+            <form action="/search" class="d-flex">
+                <input class="form-control me-2 search-box" name="query" type="search" placeholder="Search"
+                    aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+
             <a href="#">
-                <button class="btn">
+                <button class="btn btn-dark cart-btn">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-cart" viewBox="0 0 16 16">
                         <path
@@ -26,10 +32,6 @@
                     </svg>
                 </button>
             </a>
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
 
         </div>
     </div>
