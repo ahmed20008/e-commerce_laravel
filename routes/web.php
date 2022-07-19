@@ -22,10 +22,17 @@ Route::get('/logout', function () {
     Session::forget('user');
     return redirect('login');
 });
-
+//loginroute
 Route::post("/login", [UserController::class, 'login']);
+//home page route
 Route::get("/", [ProductController::class, 'index']);
+// detail page route
 Route::get("detail/{id}", [ProductController::class, 'detail']);
+// search page route
 Route::get("search", [ProductController::class, 'search']);
+//add to cart page route
 Route::post("add_to_cart", [ProductController::class, 'addToCart']);
+// cart list route
 Route::get("cartlist", [ProductController::class, 'cartlist']);
+//remove  from cart route
+Route::get("removecart/{id}", [ProductController::class, 'removeCart']);

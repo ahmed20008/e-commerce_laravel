@@ -23,9 +23,11 @@
                         </a>
                     </div>
                     <div class="col-md-4">
-                        <button class="btn btn-danger">
-                            Remove from cart
-                        </button>
+                        <a href="/removecart/{{ $product->cart_id }}">
+                            <button class="btn btn-danger">
+                                Remove
+                            </button>
+                        </a>
                     </div>
                 </div>
             @endforeach
