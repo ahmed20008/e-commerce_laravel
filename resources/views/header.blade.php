@@ -20,11 +20,9 @@ if (Session()->has('user')) {
                     <a class="nav-link" aria-current="page" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="ordernow">Orders</a>
+                    <a class="nav-link" href="#">Orders</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Shop</a>
-                </li>
+
                 <li>
                     <form action="/search" class="d-flex">
                         <input class="form-control me-2 search-box" name="query" type="search" placeholder="Search"

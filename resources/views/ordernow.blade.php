@@ -31,24 +31,22 @@
             <div class="col-md-1"></div>
             <div class="container">
 
-                <form>
+                <form action="/orderplace" method="POST">
+                    @csrf
                     <div class="form-group">
                         <label for="inputAddress">Address</label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        <input name="address" type="text" class="form-control" id="inputAddress"
+                            placeholder="1234 Main St">
                     </div>
-                    <div class="form-group">
-                        <label for="inputAddress2">Address 2</label>
-                        <input type="text" class="form-control" id="inputAddress2"
-                            placeholder="Apartment, studio, or floor">
-                    </div>
+
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="inputCity">City</label>
-                            <input type="text" class="form-control" id="inputCity">
+                            <input name="city" type="text" class="form-control" id="inputCity">
                         </div>
                         <div class="form-group col-md-4">
                             <label for="inputState">State</label>
-                            <select id="inputState" class="form-control">
+                            <select name="state" id="inputState" class="form-control">
                                 <option>Select your State</option>
                                 <option>Punjab</option>
                                 <option>Sindh</option>
@@ -58,30 +56,28 @@
                         </div>
                         <div class="form-group col-md-2">
                             <label for="inputZip">Zip</label>
-                            <input type="text" class="form-control" id="inputZip">
+                            <input name="zip" type="text" class="form-control" id="inputZip">
                         </div>
                     </div>
                     <div class="form-group">
                         <h3>Select your Payment Method</h3>
                         <br>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
-                                value="option1" checked>
-                            <label class="form-check-label" for="gridRadios1">
+                            <input class="form-check-input" type="radio" name="payment" id="gridRadios1" value="cash"
+                                checked>
+                            <label class="form-check-label" for="payment">
                                 Online payment
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
-                                value="option2">
-                            <label class="form-check-label" for="gridRadios2">
+                            <input class="form-check-input" type="radio" name="payment" id="gridRadios2" value="cash">
+                            <label class="form-check-label" for="payment">
                                 EMI payment
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3"
-                                value="option3">
-                            <label class="form-check-label" for="gridRadios3">
+                            <input class="form-check-input" type="radio" name="payment" id="gridRadios3" value="cash">
+                            <label class="form-check-label" for="payment">
                                 Payment on delivery
                             </label>
                         </div>
