@@ -28,7 +28,6 @@
             @endforeach
 
         </div>
-        <!-- Inner -->
 
         <!-- Controls -->
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
